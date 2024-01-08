@@ -12,6 +12,8 @@ ___
 
 <!-- ! Body -->
 
+<figure><embed src="https://wakatime.com/share/@FragnaroK/0aee79fe-1b96-42ef-a7cb-cbb6b02227e3.svg"></embed></figure>
+
 <!-- ; Widgets -->
 
 ![GitHub Langs](https://github-readme-stats-weld-kappa.vercel.app/api/top-langs/?username=FragnaroK&layout=pie&theme=chartreuse-dark&langs_count=20&show_icons=true)![wakatime stats](https://github-readme-stats-weld-kappa.vercel.app/api/wakatime?username=FragnaroK&layout=pie&theme=chartreuse-dark)
