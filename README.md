@@ -1,18 +1,15 @@
 <br clear="both">
 
-<h1 align="center" style="display:none">Franco Canalejo</h1>
 <div style="width: 100%;">
   <img src="assets/header.svg" style="width: 100%;" alt="Click to see the source">
 </div>
 
 <br clear="both">
 
-<h3>😎 Quick things to know about Me </h3>
 
-- 🇦🇷 I'm from Argentina but currently living in Australia 🇦🇺.
-- 🛠 I’m currently working with JS (JQuery), HTML, CSS, etc.
-- 📚 I'm currently learning Rust and Kotlin.
-- ⚡ Check out my website! [francocanalejo.com](https://francocanalejo.com)
+<img align="right" height="200" style="border-radius: 100px;" src="https://i.imgflip.com/8kb8y3.gif"  />
+<h3 align="left">😎 Quick things to know about me: </h3>
+<p align="left">- 🇦🇷 I'm from Argentina but currently living in Australia 🇦🇺.<br />- 🛠 I’m currently working with JS (JQuery), HTML, CSS, LMS, etc.<br />- 📚 I'm currently learning Rust and Kotlin.<br />- ⚡ Check out my website! <a href="https://francocanalejo.com">francocanalejo.com</a> </p>
 
 
 <br clear="both">
@@ -26,7 +23,6 @@
 
 ###
 
-<img align="right" height="150" src="https://i.imgflip.com/8kb8y3.gif"  />
 
 ###
 
