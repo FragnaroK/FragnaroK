@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 700 80" width="700" height="80" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 700 140" width="700" height="140" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
@@ -49,6 +49,7 @@
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    transform: scale(1.5)
                 }
 
                 .header-wrapper::before,
@@ -78,7 +79,7 @@
                     top: calc(50% + calc(var(--header-wrapper-padding-y) / 2));
                     translate: 0 calc(-50% + calc(var(--header-wrapper-padding-y) / 4));
                     width: 0%;
-                    height: calc(var(--brackets-size) - var(--header-wrapper-padding-y));
+                    height: calc(var(--brackets-size) - 3px);
                     background-color: #FFF;
                     animation: fill-progress-bar 15s 2s steps(100) alternate both infinite;
                 }
