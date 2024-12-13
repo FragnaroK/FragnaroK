@@ -9,7 +9,7 @@
 
 <img align="right" height="200" style="border-radius: 100px;" src="https://i.imgflip.com/8kb8y3.gif"  />
 <h3 align="left">😎 Quick things to know about me: </h3>
-<p align="left">- 🇦🇷 I'm from Argentina but currently living in Australia 🇦🇺.<br />- 🛠 I’m currently working with JS (JQuery), HTML, CSS, LMS, etc.<br />- 📚 I'm currently learning Rust and Kotlin.<br />- ⚡ Check out my website! <a href="https://francocanalejo.com">francocanalejo.com</a> </p>
+<p align="left">- 🇦🇷 I'm from Argentina but currently living in Australia 🇦🇺.<br />- 🛠 I’m currently working with JS (JQuery), HTML, CSS, LMS, etc.<br />- 📚 I'm currently learning Rust and Kotlin.<br />- ⚡ Check out my website! <a href="https://francocanalejo.com" target="_blank">francocanalejo.com</a> </p>
 
 
 <br clear="both">
