@@ -17,7 +17,7 @@
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=FragnaroK&locale=en&mode=weekly&theme=github_dark&hide_border=true&border_radius=5" height="160" alt="streak graph"  />
   <img src="https://github-readme-stats.vercel.app/api?username=FragnaroK&hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="160" alt="stats graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=FragnaroK&theme=github-dark&hide_border=true&hide_title=true&area=true" height="160" alt="activity-graph graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=FragnaroK&theme=github-dark&hide_border=true&hide_title=true&area=true" height="140" alt="activity-graph graph"  />
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=FragnaroK&locale=en&hide_title=true&layout=compact&card_width=150&langs_count=6&theme=github_dark&hide_border=true" height="110" alt="languages graph"  />
 </div>
 
