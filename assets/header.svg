@@ -1,0 +1,104 @@
+<svg fill="none" viewBox="0 0 700 80" width="700" height="80" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                :root {
+                    --subtitle-color: rgba(255, 255, 255, 0.671);
+                    --brackets-size: 55px;
+                    --header-wrapper-padding-y: 5px;
+                    --header-wrapper-padding-x: 20px;
+                }
+
+                * {
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color: #FFF;
+                }
+
+                *::before,
+                *::after {
+                    position: absolute;
+                    top: 0;
+                    z-index: 99999;
+                }
+
+                h1,
+                h2,
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                    mix-blend-mode: difference;
+                }
+
+                h3 {
+                    font-size: small;
+                    color: var(--subtitle-color);
+                }
+                
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .header-wrapper {
+                    position: relative;
+                    width: fit-content;
+                    padding: var(--header-wrapper-padding-y) var(--header-wrapper-padding-x);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                }
+
+                .header-wrapper::before,
+                .header-wrapper::after {
+                    top: 50%;
+                    translate: 0 -50%;
+                    font-size: var(--brackets-size);
+                }
+
+                .header-wrapper::before {
+                    content: "[";
+                    left: 0;
+                }
+
+                .header-wrapper::after {
+                    content: "]";
+                    right: 0;
+                }
+
+                .header-wrapper h1, .header-wrapper h3 {
+                    z-index: 99999;
+                }
+
+                .progress-bar {
+                    position: absolute;
+                    left: calc(var(--header-wrapper-padding-x) / 4);
+                    top: calc(50% + calc(var(--header-wrapper-padding-y) / 2));
+                    translate: 0 calc(-50% + calc(var(--header-wrapper-padding-y) / 4));
+                    width: 0%;
+                    height: calc(var(--brackets-size) - var(--header-wrapper-padding-y));
+                    background-color: #FFF;
+                    animation: fill-progress-bar 15s 2s steps(100) alternate both infinite;
+                }
+
+                @keyframes fill-progress-bar {
+                    to {
+                        width: calc(100% - calc(var(--header-wrapper-padding-x) / 4)) ;
+                    }
+                }
+
+               
+            </style>
+
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="progress-bar"></div>
+                    <h1>Franco Canalejo</h1>
+                    <h3>FragnaroK ~ Web Developer</h3>
+                </div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
