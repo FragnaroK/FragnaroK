@@ -3,15 +3,27 @@
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
                 :root {
-                    --subtitle-color: rgba(255, 255, 255, 0.671);
+                    --color: 255, 255, 255;
+ 
                     --brackets-size: 55px;
                     --header-wrapper-padding-y: 5px;
                     --header-wrapper-padding-x: 20px;
+
+                    --animation-duration: 2s; 
+                    --animation-timing: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                }
+
+                svg {
+                    /* background-color: black; */
+                    position: absolute;
+                    top: 65%;
+                    left: 50%;
+                    translate: -50% -50%;
                 }
 
                 * {
                     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    color: #FFF;
+                    color: rgba(var(--color));
                 }
 
                 *::before,
@@ -27,11 +39,15 @@
                     margin: 0;
                     padding: 0;
                     mix-blend-mode: difference;
+                    animation: FadeIn .25s ease-in-out both;
+                    animation-delay: var(--animation-duration);
                 }
 
                 h3 {
                     font-size: small;
-                    color: var(--subtitle-color);
+                    font-weight: 100;
+                    color: rgba(var(--color), 0.6);
+                    animation-delay: calc(var(--animation-duration) * 1.1);
                 }
                 
                 .container {
@@ -54,19 +70,24 @@
 
                 .header-wrapper::before,
                 .header-wrapper::after {
+                    font-size: var(--brackets-size);
                     top: 50%;
                     translate: 0 -50%;
-                    font-size: var(--brackets-size);
+                    animation-duration: var(--animation-duration);
+                    animation-timing-function: var(--animation-timing);
+                    animation-fill-mode: both;
                 }
 
                 .header-wrapper::before {
                     content: "[";
                     left: 0;
+                    animation-name: Slide2Left;
                 }
 
                 .header-wrapper::after {
                     content: "]";
                     right: 0;
+                    animation-name: Slide2Right;
                 }
 
                 .header-wrapper h1, .header-wrapper h3 {
@@ -75,22 +96,48 @@
 
                 .progress-bar {
                     position: absolute;
-                    left: calc(var(--header-wrapper-padding-x) / 4);
-                    top: calc(50% + calc(var(--header-wrapper-padding-y) / 2));
-                    translate: 0 calc(-50% + calc(var(--header-wrapper-padding-y) / 4));
+                    top: 63%;
+                    translate: 0% 100%;
                     width: 0%;
-                    height: calc(var(--brackets-size) - 3px);
-                    background-color: #FFF;
-                    animation: fill-progress-bar 15s 2s steps(100) alternate both infinite;
+                    height: 1.5px;
+                    background-color: rgba(var(--color));
+                    animation: fill-progress-bar var(--animation-duration) var(--animation-timing) both ;
                 }
 
                 @keyframes fill-progress-bar {
                     to {
-                        width: calc(100% - calc(var(--header-wrapper-padding-x) / 4)) ;
+                        width: 90%;
                     }
                 }
 
-               
+                @keyframes Slide2Right {
+                    from {
+                        right: 40%;
+                    }
+                    to {
+                        right: 0;
+                    }
+                }
+
+                @keyframes Slide2Left {
+                    from {
+                        left: 40%;
+                    }
+                    to {
+                        left: 0;
+                    }
+                }
+
+               @keyframes FadeIn {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+               }
+
             </style>
 
             <div class="container">
